@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:darkslateblue;
+        }
+        #title {
+            text-align: center;
+            color:white;
+        }
+        #description {
+            text-align: center;
+            font-size:30px;
+            color:white;
+        }
+        #survey-form {
+            border-radius: 10px;
+            background-color:rebeccapurple;
+            margin-left:150px;
+            margin-right:150px;
+            padding:50px;
+        }
+        #name-label , #email-label ,#number-label{
+            color:white;
+            text-align: left;
+            font-size:25px;
+        }
+        input {
+            padding:10px;
+            padding-right: 400px;
+        }
+        label {
+            color:white;
+            text-align: left;
+            font-size:25px;
+        }
+        #dropdown {
+           padding:10px;
+            padding-right:450px;
+        }
+        #submit {
+            text-align: center;
+            background-color: green;
+            padding-left:300px;
+            padding-right:250px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+<p id="description">
+Thankyou for Taking time to Fill this form</p>
+<form id="survey-form">
+<label for="name" id="name-label">Name</label><br><br>
+<input type="text" id="name" placeholder="xxxxxx" required><br><br>
+<label for="email" id="email-label">Email</label><br><br>
+<input type="email" placeholder="abc@gmail.com" required><br><br>
+<label for="age" id="number-label">Age</label><br><br>
+<input type="number" placeholder="18" min="20" max="50"><br><br>
+<label for="role">which option best describes your role ?</label><br><br>
+<select id="dropdown" name="select your option">
+<option placeholder="select your option">select your option</option>
+<option value="student">student</option>
+<option value="Full time job">Full time job</option>
+<option value="Full time learner">Full time learner</option>
+<option value="others">others</option>
+</select><br><br>
+<label for="recommend" >would you recommend freecodecamp to your friends?</label><br><br>
+<input type="radio" name="recommend" value="Definitely">
+<label for="Definitely">Definitely</label><br><br>
+<input type="radio" name="recommend" value="May Be">
+<label for="May Be">May Be</label><br><br>
+<input type="radio" name="recommend" value="Not Sure">
+<label for="Not Sure">Not Sure</label><br><br>
+<label for="role">which is your favourite feature of freecodecamp?</label><br><br>
+<select id="dropdown" name="select your option">
+<option placeholder="select your option">select your option</option>
+<option value="Challenges">Challenges</option>
+<option value="Projects">Projects</option>
+<option value="Community">Community</option>
+<option value="Open source">Open source</option>
+</select><br><br>
+<label for="improved" >what woukd you like to see improved ?</label><br><br>
+<input type="checkbox" name="improved" value="Front-end Projects">
+<label for="front-end">front-end Projects</label><br><br>
+<input type="checkbox" name="improved" value="Back-end Projects">
+<label for="Back-end projects">Back-end Projects</label><br><br>
+<input type="checkbox" name="improved" value="Data Visualization">
+<label for="data">Data Visualization</label><br><br>
+<input type="checkbox" name="improved" value="Challenges">
+<label for="challenges">Challenges</label><br><br>
+<input type="checkbox" name="improved" value="Videos">
+<label for="videos">videos</label><br><br>
+<input type="checkbox" name="improved" value="Additional courses">
+<label for="courses">Additional courses</label><br><br>
+<label for="comments">Any Comments or Suggestions?</label><br><br>
+<textarea name="message" rows="10" cols="77">
+    Enter your comments here...
+    </textarea><br><br>
+    <input type="button" id="submit" value="submit">
+</form>
+</body>
+</html>
